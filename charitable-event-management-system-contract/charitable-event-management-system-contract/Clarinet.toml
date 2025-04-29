@@ -1,0 +1,22 @@
+[project]
+name = "charitable-event-management-system-contract"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+[contracts.charitable-event-management-system-contract]
+path = "contracts/charitable-event-management-system-contract.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
